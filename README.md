@@ -4,13 +4,26 @@
 [![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/winget-cli)
 
 <!-- AI:start:what-it-does -->
-_Description pending._
+This project provides the Windows Package Manager (WinGet), enabling users to discover, install, upgrade, and manage software packages on Windows systems through a command-line interface, PowerShell modules, or a COM API. It addresses the need for streamlined software management, primarily for developers, system administrators, and power users.
 <!-- AI:end:what-it-does -->
 
 ## Architecture
 
 <!-- AI:start:architecture -->
-_Architecture documentation pending._
+WinGet consists of three primary components: the CLI, PowerShell modules, and a COM API. The CLI provides command-line functionality for managing packages on Windows. PowerShell modules extend this functionality for scripting and automation. The COM API enables integration with other applications. These components share a common core library for package management logic. The repository uses GitHub Actions workflows for tasks like issue deduplication and spell-checking. The directory structure is as follows:
+
+```plaintext
+winget-cli/
+├── src/                # Source code for CLI, PowerShell modules, and COM API
+│   ├── AppInstaller/   # Core library for package management
+│   ├── CLI/            # Command Line Interface implementation
+│   ├── Powershell/     # PowerShell module implementation
+│   ├── COM/            # Component Object Model API implementation
+├── tests/              # Unit and integration tests
+├── tools/              # Build and development tools
+├── docs/               # Documentation files
+├── .github/workflows/  # GitHub Actions workflows
+```
 <!-- AI:end:architecture -->
 
 ## Install
@@ -71,5 +84,5 @@ _No additional resource files found._
 ## License
 
 <!-- AI:start:license -->
-[MIT](https://github.com/Interested-Deving-1896/winget-cli/blob/master/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- License not detected — add a LICENSE file to this repo. -->
 <!-- AI:end:license -->
